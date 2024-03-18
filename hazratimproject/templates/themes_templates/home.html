@@ -1,0 +1,18 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+     <title>{% block title %} My App {% endblock %}</title>
+</head>
+<body>
+   
+    {% block content %} 
+     {% for  i in themes %}
+            <h1> {{i }} </h1>
+     {% endfor  %}
+     {% endblock %}
+     <a href="{% url 'theme_create' %}"> add Theme </a>
+   
+</body>
+</html>

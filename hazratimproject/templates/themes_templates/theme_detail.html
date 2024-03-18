@@ -1,0 +1,15 @@
+{% extends 'base.html' %}
+
+
+{% block content  %}
+
+ 
+     {% for  i in  theme_detail  %} 
+     <h1> {{i.theme_name}}  </h1>
+     <h1> {{i.theme_detail }}  </h1>
+     {%  endfor %}
+
+     {% endblock   %}
+
+
+     

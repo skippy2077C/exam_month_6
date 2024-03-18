@@ -1,0 +1,15 @@
+{%   extends 'base.html'  %}
+
+{%  block content %}
+    <h1> News page </h1>
+    <a href="{% url 'about'%}">qaytish</a>
+    <table class="table table-primary">
+        {% for news in news_list %}
+            <tr>
+                <td>{{ news.id }}</td>
+                <td>{{ news.title }}</td>
+                <td>{{ news.text }}</td>
+            </tr>
+        {% endfor %}
+    </table>
+{% endblock %}
